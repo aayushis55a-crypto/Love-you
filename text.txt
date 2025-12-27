@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Love Game 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+    }
+    .card {
+      background: rgba(255,255,255,0.15);
+      padding: 30px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 380px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    h1 {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #fff;
+      color: #ee5a7c;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card" id="game">
+  <h1>🎮 Love Game Started</h1>
+  <p>
+    Player 1: You 💙<br>
+    Player 2: Me 💖<br><br>
+    Level Completed: <b>6 Months</b><br>
+    Achievement Unlocked: <br>
+    <b>My Favorite Person</b>
+  </p>
+  <button onclick="nextLevel()">Next Level 💕</button>
+</div>
+
+<script>
+  function nextLevel() {
+    document.getElementById("game").innerHTML = `
+      <h1>❤️ Final Level</h1>
+      <p>
+        These 6 months with you<br>
+        weren’t just time,<br>
+        they were memories, care,<br>
+        fights, laughter & love.<br><br>
+
+        I choose you today,<br>
+        tomorrow,<br>
+        and every level ahead ♾️
+      </p>
+      <button onclick="final()">Claim Reward 🎁</button>
+    `;
+  }
+
+  function final() {
+    document.getElementById("game").innerHTML = `
+      <h1>🏆 Reward Unlocked</h1>
+      <p>
+        Unlimited Love 💞<br>
+        Lifetime Hugs 🤍<br>
+        Forever Us ♾️<br><br>
+
+        Happy 6-Month Anniversary,<br>
+        my love 💖
+      </p>
+    `;
+  }
+</script>
+
+</body>
+</html>
